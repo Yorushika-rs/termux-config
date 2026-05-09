@@ -19,7 +19,7 @@ wget -O ~/tmp-font/Hack.zip \
 "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip"
 unzip -j ~/tmp-font/Hack.zip \
 "Hack Regular Nerd Font Complete.ttf" \
-- d ~/.termux/
+-d ~/.termux/
 
 # 4. Mover y renombrar archivo ttf
 mv ~/.termux/"Hack Regular Nerd Font Complete.ttf" ~/.termux/font.ttf
