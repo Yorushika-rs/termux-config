@@ -15,4 +15,7 @@ rm -rf "$TEMP_DIR"
 apt autoremove
 
 chsh -s fish
-fish
+
+echo "Run:"
+echo "fish"
+echo "source ~/fisnish_setup.fish"
