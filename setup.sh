@@ -13,5 +13,7 @@ cp "$TEMP_DIR/fish/finish_setup.fish" ~/finish_setup.fish
 
 rm -rf "$TEMP_DIR"
 
+apt autoremove
+
 chsh -s fish
 fish
