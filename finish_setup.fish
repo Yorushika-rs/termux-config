@@ -16,7 +16,7 @@ fisher update
 mkdir ~/.termux
 mkdir ~/tmp-font
 wget -O ~/tmp-font/Hack.zip \
-"https://github.com/ryanoasis/nerd-fonts/releases/dowload/v2.1.0/Hack.zip"
+"https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip"
 unzip -j ~/tmp-font/Hack.zip \
 "Hack Regular Nerd Font Complete.ttf" \
 - d ~/.termux/
