@@ -1,0 +1,5 @@
+# Actualizar Termux rápido
+alias upd="pkg update && pkg upgrade -y"
+
+# Listar solo mis alias personalizados
+alias myaliases="cat ~/.aliases"
