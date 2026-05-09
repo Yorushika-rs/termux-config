@@ -1,4 +1,4 @@
-function pven --argument venv_name
+function pvenv --argument venv_name
     # Si no das nombre, usa .venv por defecto
     if test -z "$venv_name"
         set venv_name .venv
