@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 pkg update -y && pkg upgrade -y
-pkg install -y git fish python curl wget fzf proot
+pkg install -y git fish python curl wget fzf proot unzip
 
 TEMP_DIR=$(mktemp -d)
 git clone --depth 1 https://github.com/Yorushika-rs/termux-config.git "$TEMP_DIR"
