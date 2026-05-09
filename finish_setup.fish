@@ -3,7 +3,6 @@ curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fi
 fisher install jorgebucaran/autopair.fish PatrickF1/fzf.fish ilancosman/tide@v6
 
 # 2. Inyección de configuración
-# Uso una sola línea para evitar múltiples lecturas al disco
 set -l config_path ~/.config/fish/config.fish
 test -f $config_path; or touch $config_path
 
@@ -13,6 +12,13 @@ end
 
 fisher update
 
+mkdir ~/.termux
+wget -O ~/.termux HackRegularNerdFontComplete.ttf \
+"https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack½20Regular%20Nerd%20Font%20Complete.ttf"
+mv ~/.termux/HackRegularNerdFontComplete.ttf ~/.termux/font.ttf
+
+termux-reload-settings
+
 # 3. Autodestrucción y limpieza
 rm (status filename) 
-echo "Entorno listo."
+echo "Reload app for apply updates."
