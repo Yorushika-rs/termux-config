@@ -9,8 +9,7 @@ git clone --depth 1 https://github.com/Yorushika-rs/termux-config.git "$TEMP_DIR
 mkdir -p ~/.config/fish/functions
 cp -r "$TEMP_DIR/.congif/fish/"* ~/.config/fish/
 cp "$TEMP_DIR/.aliases" ~/.aliases
-cp "$TEMP_DIR/finish_setup.fish" ~/finish_setup.fish
-
+cp "$TEMP_DIR/finish_setup.fish" ~/
 rm -rf "$TEMP_DIR"
 
 apt autoremove
