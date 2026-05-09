@@ -12,13 +12,22 @@ end
 
 fisher update
 
+# 3. Descargas Fuentes para iconos
 mkdir ~/.termux
-wget -O ~/.termux/HackRegularNerdFontComplete.ttf \
-"https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/Hack/Regular/HackNerdFont.ttf"
-mv ~/.termux/HackRegularNerdFontComplete.ttf ~/.termux/font.ttf
+mkdir ~/tmp-font
+wget -O ~/tmp-font/Hack.zip \
+"https://github.com/ryanoasis/nerd-fonts/releases/dowload/v2.1.0/Hack.zip"
+unzip -j ~/tmp-font/Hack.zip \
+"Hack Regular Nerd Font Complete.ttf" \
+- d ~/.termux/
 
+# 4. Mover y renombrar archivo ttf
+mv ~/.termux/"Hack Regular Nerd Font Complete.ttf" ~/.termux/font.ttf
+
+# 5. Recarga de settings
 termux-reload-settings
 
-# 3. Autodestrucción y limpieza
-rm (status filename) 
+# 6. Autodestrucción y limpieza
+rm -rf ~/tmp-font
+rm (status filename)
 echo "Reload app for apply updates."
