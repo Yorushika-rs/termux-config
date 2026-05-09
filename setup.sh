@@ -18,4 +18,4 @@ chsh -s fish
 
 echo "Run:"
 echo "fish"
-echo "source ~/fisnish_setup.fish"
+echo "source ~/finish_setup.fish"
