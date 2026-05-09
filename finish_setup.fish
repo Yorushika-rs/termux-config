@@ -13,7 +13,7 @@ end
 fisher update
 
 mkdir ~/.termux
-wget -O ~/.termux HackRegularNerdFontComplete.ttf \
+wget -O ~/.termux/HackRegularNerdFontComplete.ttf \
 "https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack½20Regular%20Nerd%20Font%20Complete.ttf"
 mv ~/.termux/HackRegularNerdFontComplete.ttf ~/.termux/font.ttf
 
