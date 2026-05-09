@@ -19,9 +19,8 @@ cp "$TEMP_DIR/.aliases" ~/.aliases
 # 5. Vincular alias
 echo "source ~/.aliases" >> ~/.config/fish/config.fish
 
-# 6. Instalar Fisher y sincronizar plugins
-# Se descarga Fisher y se ejecuta update para instalar lo que esté en tu fish_plugins
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher update
+# 6. Instalar Fisher y sincronizar plugins (Corrección de error de source)
+fish -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher update"
 
 # Limpieza
 rm -rf "$TEMP_DIR"
