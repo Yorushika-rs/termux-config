@@ -14,8 +14,8 @@ fisher update
 
 mkdir ~/.termux
 wget -O ~/.termux/HackRegularNerdFontComplete.ttf \
-"https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack½20Regular%20Nerd%20Font%20Complete.ttf"
-mv ~/.termux/HackRegularNerdFontComplete.ttf ~/.termux/font.ttf
+"https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/Hack/Regular/HackNerdFont.ttf"
+mv ~/.termux/HackNerdFont-Regular.ttf ~/.termux/font.ttf
 
 termux-reload-settings
 
