@@ -11,6 +11,8 @@ for line in "source ~/.aliases"
     grep -q "$line" $config_path; or echo "$line" >> $config_path
 end
 
+fisher update
+
 # 3. Autodestrucción y limpieza
 rm (status filename) 
 echo "Entorno listo."
